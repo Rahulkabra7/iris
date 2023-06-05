@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the servival Prediction of Titanic</title>
+</head>
+<body style="padding: 150pt;
+            padding-left: 400pt;
+            padding-top: 90pt;
+            background-color: rgb(255, 255, 255);
+            /* background-image: url('/templates/medical-insurance-img.jpg') */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;">
+
+    <h1>Welcome to the servival Prediction of Titanic</h1>
+
+    <form method="GET" action="/predict_charges">
+
+        <label style="font-size: 20pt;font: bolder;">Pclass :</label>
+            <input type = "text" name = "Pclass">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;">Gender :</label>
+        <label style="font-size: 20pt;font: bolder;margin-left: 43pt;">Male :</label> <input type = "radio" name="Gender" value = "male">
+        <label style="font-size: 20pt;font: bolder;margin-left: 10pt;">Female :</label> <input type = "radio" name="Gender" value = "female">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;">Age:</label>
+            <input type = "text" name = "Age">
+        </select>
+
+        <br>
+        <br>
+        <label style="font-size: 20pt;font: bolder;">SibSp :</label>
+            <input type = "text" name = "SibSp">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;">Parch :</label>
+            <input type = "text" name = "Parch">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;">Fare :</label>
+            <input type = "text" name = "Fare">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;">Embarked :</label>
+        <label style="font-size: 20pt;font: bolder;margin-left: 43pt;">S :</label> <input type = "radio" name="Embarked" value = "S">
+        <label style="font-size: 20pt;font: bolder;margin-left: 10pt;">C :</label> <input type = "radio" name="Embarked" value = "C">
+        <label style="font-size: 20pt;font: bolder;margin-left: 10pt;">Q :</label> <input type = "radio" name="Embarked" value = "Q">
+        </select>
+
+        <br>
+        <br>
+        <input style="width:500pt;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      " type = "submit" value = "SUBMIT">
+
+        <br>
+        <p style="font-size: 23pt; font: bolder;">Person <b>{{ prediction }}.</b></p>
+
+    </form>
+</body>
+</html>
